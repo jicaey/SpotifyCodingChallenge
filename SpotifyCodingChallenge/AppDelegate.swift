@@ -11,12 +11,34 @@ import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
+    let store = DataStore.sharedInstance
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        store.postPeopleData(name: "Sean", city: "New York")
+        store.fetchPeopleData()
+        
+        // window config
+        let homeViewController = HomeViewController()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        window?.rootViewController = UINavigationController(rootViewController: homeViewController)
+        
+        // status bar config
+        let statusBarBackgroundView = UIView()
+        let statusbarHeight = UIApplication.shared.statusBarFrame.height
+        statusBarBackgroundView.backgroundColor = .clear
+        application.statusBarStyle = .lightContent
+        window?.addSubview(statusBarBackgroundView)
+        
+        statusBarBackgroundView.snp.makeConstraints({ (make) in
+            make.leading.top.trailing.equalToSuperview()
+            make.height.equalTo(statusbarHeight)
+        })
+
+        
         return true
     }
 
