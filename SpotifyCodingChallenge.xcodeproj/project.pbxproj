@@ -19,6 +19,7 @@
 		70EB7D131E7F3BDC002F7E0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70EB7D111E7F3BDC002F7E0D /* LaunchScreen.storyboard */; };
 		70EB7D1B1E7F4095002F7E0D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EB7D1A1E7F4095002F7E0D /* Constants.swift */; };
 		70EB7D1D1E7F4444002F7E0D /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EB7D1C1E7F4444002F7E0D /* ResultsView.swift */; };
+		70F301311E81F74B00D241A8 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F301301E81F74B00D241A8 /* PersonCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +52,7 @@
 		70EB7D141E7F3BDC002F7E0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70EB7D1A1E7F4095002F7E0D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		70EB7D1C1E7F4444002F7E0D /* ResultsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		70F301301E81F74B00D241A8 /* PersonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 		8CEE776223BABFF53613F961 /* Pods_SpotifyCodingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotifyCodingChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -93,8 +95,9 @@
 				70EB7D071E7F3BDC002F7E0D /* HomeViewController.swift */,
 				70A267161E7F832100701C2C /* SwipeView.swift */,
 				70EB7D1C1E7F4444002F7E0D /* ResultsView.swift */,
-				70EB7D1A1E7F4095002F7E0D /* Constants.swift */,
+				70F301301E81F74B00D241A8 /* PersonCell.swift */,
 				70A267181E7FA59100701C2C /* DataStore.swift */,
+				70EB7D1A1E7F4095002F7E0D /* Constants.swift */,
 				70EB7D0F1E7F3BDC002F7E0D /* Assets.xcassets */,
 				70EB7D111E7F3BDC002F7E0D /* LaunchScreen.storyboard */,
 				70EB7D141E7F3BDC002F7E0D /* Info.plist */,
@@ -247,6 +250,7 @@
 			files = (
 				70A267191E7FA59100701C2C /* DataStore.swift in Sources */,
 				70EB7D0E1E7F3BDC002F7E0D /* SpotifyCodingChallenge.xcdatamodeld in Sources */,
+				70F301311E81F74B00D241A8 /* PersonCell.swift in Sources */,
 				70EB7D081E7F3BDC002F7E0D /* HomeViewController.swift in Sources */,
 				70A267171E7F832100701C2C /* SwipeView.swift in Sources */,
 				70EB7D061E7F3BDC002F7E0D /* AppDelegate.swift in Sources */,
@@ -371,6 +375,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SpotifyCodingChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jicaey.SpotifyCodingChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -389,6 +394,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SpotifyCodingChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jicaey.SpotifyCodingChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -11,14 +11,11 @@ import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
     let store = DataStore.sharedInstance
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        store.postPeopleData(name: "Sean", city: "New York")
-        store.fetchPeopleData()
+        store.getPeople()
         
         // window config
         let homeViewController = HomeViewController()
@@ -37,7 +34,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             make.leading.top.trailing.equalToSuperview()
             make.height.equalTo(statusbarHeight)
         })
-
         
         return true
     }
@@ -110,6 +106,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
 }
 

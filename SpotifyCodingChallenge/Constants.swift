@@ -31,3 +31,11 @@ let avenirBoldMedium = UIFont(name: "AvenirNextCondensed-Medium", size: 16)
 let avenirLightMedium = UIFont(name: "AvenirNextCondensed-UltraLight", size: 16)
 let avenirNext = UIFont(name: "Avenir Next", size: 24)
 let avenirGiant = UIFont(name: "AvenirNextCondensed-Medium", size: 30)
+let avenirBook = UIFont(name: "Avenir-Book", size: 16)
+
+// cell identifiers
+let personCellID = "personCell"
+
+// baseURL
+
+let baseURL = "https://shielded-gorge-22087.herokuapp.com"
